@@ -12,7 +12,7 @@ class NewVisitorTest(unittest.TestCase):
 
     def test_can_start_a_list_and_retrieve_it_later(self):
         # Edith has heard about a cool new online to-do app. She goes
-        # to chec out its homepage.
+        # to check out its homepage.
         self.browser.get('http://localhost:8000')
 
         # She notices the page title and header mention to-do lists
@@ -27,7 +27,7 @@ class NewVisitorTest(unittest.TestCase):
             'Enter a to-do item'
         )
 
-        # She types "Buy peackock feathers" into a text box (Edith's hobby
+        # She types "Buy peacock feathers" into a text box (Edith's hobby
         # is tying fly-fishing lures)
         inputbox.send_keys('Buy peacock feathers')
 
@@ -43,7 +43,8 @@ class NewVisitorTest(unittest.TestCase):
         )
 
         # There is still a text box inviting her to add another item, She
-        # enters "Use peacock feathers to make a fly" (Edith is very methodical)
+        # enters "Use peacock feathers to make a fly" (Edith is very
+        # methodical)
         self.fail('Finish the test!')
 
         # The page updates again, and now shows both items on her list
